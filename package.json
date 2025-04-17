@@ -1,0 +1,70 @@
+{
+  "name": "create-indi-backend",
+  "version": "1.1.6",
+  "description": "A complete and production-grade Express.js backend setup.",
+  "main": "index.js",
+  "type": "module",
+  "private": "false",
+  "files": ["bin", "src", "README.md"],
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/index.js",
+    "start": "node src/index.js",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "bin": {
+    "create-mk-backend": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLACKgrimore/Mk-Server.git"
+  },
+  "author": "Manoj Kumar Rajpoot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BLACKgrimore/Mk-Server/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/BLACKgrimore/Mk-Server#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.2.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.3",
+    "mongoose-aggregate-paginate-v2": "^1.0.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1",
+    "xss-clean": "^0.1.1"
+  },
+  "keywords" : [
+    "express",
+    "backend",
+    "api",
+    "server",
+    "mongodb",
+    "mongoose",
+    "cloudinary",
+    "jwt",
+    "bcrypt",
+    "security",
+    "production-ready",
+    "starter-kit",
+    "template"
+  ],
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "response-time": "^2.3.2"
+  }
+}
